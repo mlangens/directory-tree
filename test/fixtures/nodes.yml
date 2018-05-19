@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nodeable_id: 1
+  nodeable_type: MyString
+  name: MyString
+
+two:
+  nodeable_id: 1
+  nodeable_type: MyString
+  name: MyString

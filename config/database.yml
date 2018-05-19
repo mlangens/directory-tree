@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  username: postgres
+  database: directory-tree-dev
+  host: localhost
+
+test:
+  <<: *default
+  database: directory-tree-test
+
+production:
+  <<: *default
+  database: directory-tree-prod
+  username: postgres
+  password: <%= ENV['directory-tree_DATABASE_PASSWORD'] %>
